@@ -11,7 +11,7 @@ function Banner(){
         <div className='Navbar'>
         
             <Link to="/">
-                <div className='Logo' src={logo} />
+                <img className="Logo" alt="logo" src={logo} />
             </Link>
             
             <div>
@@ -19,8 +19,8 @@ function Banner(){
                     Home
                 </StyledLink>
                 
-                <StyledLink  $theme={theme} to ="/">
-                    Profil
+                <StyledLink  $theme={theme} to ="error">
+                    Error
                 </StyledLink>
                 
                 <StyledLink  $theme={theme} to ="/">

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Banner from './components/Banner';
 import Home from './pages/Home';
+import Error from './pages/Error';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -16,19 +17,12 @@ root.render(
     <Router>
       <ThemeProvider>
         <SurveyProvider>
-          <GlobalStyle>
-            
-            <Banner />
-            
-            <Routes>
-            
-              <Route exact path="/">
-                <Home />
-              </Route>
-              
-            </Routes>
-            
-          </GlobalStyle>
+          <GlobalStyle />
+          <Banner />
+          <Routes>
+            <Route exact path="/" element={<Home />}/>
+            <Route path="error" element={<Error />} />
+          </Routes>
         </SurveyProvider>
       </ThemeProvider>
     </Router>
