@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Banner from './components/Banner';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import reportWebVitals from './reportWebVitals';
@@ -18,7 +17,6 @@ root.render(
       <ThemeProvider>
         <SurveyProvider>
           <GlobalStyle />
-          <Banner />
           <Routes>
             <Route exact path="/" element={<Home />}/>
             <Route path="error" element={<Error />} />

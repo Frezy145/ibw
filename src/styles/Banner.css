@@ -1,12 +1,15 @@
 
 .Logo {
-    height: 50px;
+    height: 100px;
+    width: 200px;
 }
 
 .Navbar {
     height: auto;
-    padding: 5px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
+    position: relative;
 }

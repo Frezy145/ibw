@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { StyledLink } from '../../utils/styles/Atoms';
 import '../../styles/Banner.css';
-import logo from '../../assets/logo/smalllogo.jpg';
+import logo from '../../assets/logo/logo.svg';
 import { useTheme } from '../../utils/hooks';
 
 function Banner(){
@@ -16,15 +16,19 @@ function Banner(){
             
             <div>
                 <StyledLink $theme={theme} to ="/">
-                    Home
+                    INC BOOKKEPPING INSIGHT
                 </StyledLink>
                 
                 <StyledLink  $theme={theme} to ="error">
-                    Error
+                    WHO WE WORK WITH
                 </StyledLink>
                 
                 <StyledLink  $theme={theme} to ="/">
-                    Test
+                    PRICING
+                </StyledLink>
+                
+                <StyledLink  $theme={theme} to ="error" $isFullLink >
+                    CONCTACT
                 </StyledLink>
             </div>
           
