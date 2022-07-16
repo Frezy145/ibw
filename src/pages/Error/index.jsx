@@ -1,9 +1,15 @@
-import '../../styles/Error.css'
+import '../../styles/Error.css';
+import OffCanv from '../../components/OffCanv';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {BsArrowRight} from 'react-icons/bs'
 
 function Error(){
     return (
-        <div class='Error'>
-            Ooups ! Il y a une erreur
+        <div>
+            <div className='Error'>
+                Ooups ! Il y a une erreur
+            </div>
+            <span>{BsArrowRight}</span>
         </div>
     )
 }

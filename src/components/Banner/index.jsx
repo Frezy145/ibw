@@ -3,6 +3,8 @@ import { StyledLink } from '../../utils/styles/Atoms';
 import '../../styles/Banner.css';
 import logo from '../../assets/logo/logo.svg';
 import { useTheme } from '../../utils/hooks';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import OffCanv from '../OffCanv'
 
 function Banner(){
     const {theme} = useTheme();
@@ -14,7 +16,7 @@ function Banner(){
                 <img className="Logo" alt="logo" src={logo} />
             </Link>
             
-            <div>
+            <div className="d-none d-lg-block">
                 <StyledLink $theme={theme} to ="/">
                     INC BOOKKEPPING INSIGHT
                 </StyledLink>
@@ -31,6 +33,8 @@ function Banner(){
                     CONCTACT
                 </StyledLink>
             </div>
+            
+            <OffCanv />
           
         </div>
     )

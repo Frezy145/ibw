@@ -40,3 +40,9 @@ export const Background = styled.div`
         background-size: cover;
         background-position: center;
 `
+
+export const Content = styled.div`
+        justify-content: center;
+        background-color: #8186a0;
+        text-align: center;
+`
