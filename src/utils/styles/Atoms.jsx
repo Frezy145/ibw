@@ -1,6 +1,18 @@
 import { Link } from 'react-router-dom'
 import colors from './colors'
 import styled, { keyframes } from 'styled-components'
+import {ArrowRight} from '@styled-icons/bootstrap'
+import {Menu} from '@styled-icons/boxicons-regular';
+
+export const BlackWhiteMenu = styled(Menu)`
+     color: black;
+     width: 40px;
+`
+
+export const WhiteArrowRight = styled(ArrowRight)`
+     color: white;
+     width: 30px;
+`
 
 const rotate = keyframes`
         from {
