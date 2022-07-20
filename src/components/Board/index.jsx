@@ -1,9 +1,8 @@
 import { StyledLink, WhiteArrowRight } from '../../utils/styles/Atoms';
 import '../../styles/Board.css';
 import {Container, Row} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Board({placeholder, link, label}){
+export function Board({placeholder, link, label}){
     
     return(
         <div className='Board'>
@@ -11,7 +10,7 @@ function Board({placeholder, link, label}){
                                 text-white
                                 m-5
                                 display-4'>
-                <Row className='row justify-content-center'>
+                <Row className='justify-content-center'>
                     <div className='col-8'>
                         {label}
                     </div>
@@ -24,15 +23,20 @@ function Board({placeholder, link, label}){
     )
 }
 
-export default Board;
-
 export function BoardWithoutLink({label}){
     
     return(
         <div className='Board'>
-            <div className='Label'>
-                {label}
-            </div>
+            <Container className='text-center
+                                text-white
+                                m-5
+                                display-4'>
+                <Row className='justify-content-center'>
+                    <div className='col-8'>
+                        {label}
+                    </div>
+                </Row>
+            </Container>
         </div>
     )
 };

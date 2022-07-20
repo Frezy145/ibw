@@ -45,6 +45,10 @@ function OffCanv(){
                         BLOG
                     </StyledLink>
                     
+                    <StyledLink  $theme={theme} to ="/">
+                        HOME
+                    </StyledLink>
+                    
                     <StyledLink  $theme={theme} to ="/contact" $isFullLink >
                         CONCTACT
                     </StyledLink> 

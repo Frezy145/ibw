@@ -3,7 +3,7 @@ import { StyledLink } from '../../utils/styles/Atoms';
 import '../../styles/Banner.css';
 import logo from '../../assets/logo/logo.svg';
 import { useTheme } from '../../utils/hooks';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import OffCanv from '../OffCanv'
 
 function Banner(){
@@ -35,6 +35,10 @@ function Banner(){
                 
                 <StyledLink  $theme={theme} to ="/blog">
                     BLOG
+                </StyledLink>
+                
+                <StyledLink  $theme={theme} to ="/">
+                    HOME
                 </StyledLink>
                 
                 <StyledLink  $theme={theme} to ="/contact" $isFullLink >

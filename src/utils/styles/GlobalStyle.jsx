@@ -3,7 +3,8 @@ import { useTheme } from '../hooks'
 
 const StyledGlobalStyle = createGlobalStyle`
     * {
-      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      font-family: 'Poppins', sans-serif, 'Trebuchet MS', Helvetica;
+      font-weight: 100;
     }
 
     body {
