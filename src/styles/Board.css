@@ -1,7 +1,8 @@
 
 .Board{
-    height: 500px;
+    height: auto;
     width: inherit;
+    padding: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;

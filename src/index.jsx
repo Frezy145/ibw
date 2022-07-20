@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 // importing pages
 import Home from './pages/Home';
@@ -16,6 +18,9 @@ import FreeTrial from './pages/FreeTrial';
 import Pricing from './pages/Pricing';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import WhyIB from './pages/WhyIB';
+
+//import the Footer
+import Footer from './components/Footer'
 
 //importing industry-solutions linked pages
 import Contractors from './pages/industry-solutions-pages/Contractors';
@@ -59,6 +64,7 @@ root.render(
             <Route path="industry-solutions/multi-unit" element={<MultiUnit />} />
             <Route path="industry-solutions/professionals" element={<Professionals />} />
           </Routes>
+          <Footer />
         </SurveyProvider>
       </ThemeProvider>
     </Router>

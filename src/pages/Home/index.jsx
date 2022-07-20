@@ -1,8 +1,8 @@
 import '../../styles/Home.css';
-import Board from '../../components/Board';
+import {Board} from '../../components/Board';
 import Banner from '../../components/Banner';
 import {Background} from '../../utils/styles/Atoms'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 import image from "../../assets/img/image1.jpg";
 
